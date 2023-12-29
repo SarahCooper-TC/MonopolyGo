@@ -5,57 +5,83 @@ html {
 
 body {
   display: block;
-  font-family: verdana, sans serif;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
   height: 100vh;
-  background-color: black;
+  background-color: white;
+}
+
+img {
+  width: 65px;
+    height: 65px;
+    position: absolute;
+    top: -5px;
+    right: 3px;
+}
+
+
+
+.nav_dice {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: 5px;
+      transition: all 0s;
 }
 
 #navbar {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 75px;
     left: -0.5px;
-    font-size: 16px;
+    font-size: 12px;
     margin: 10px;
-    font-weight: 900;
+    font-weight: 500;  
+    
 }
 
 .nav-link {
   text-decoration: none;
+  text-align:left;
   color: white;
   background-color: red;
-  border: red solid 1px;
-  padding: 4px;
-  margin: 1px;
-  width: 130px;
-  
+  border-bottom: black solid 2px;
+  padding-bottom: 5px;
+  padding-right: 8px;
+  margin: 4px;
+  text-transform: uppercase;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px rgb(168, 20, 20);
 }
 
-#navbar :hover {
-  color: gold;
+.nav-link:hover .nav_dice {
+  transform: rotate(270deg);
+  transition: all 1s;
+}
+
+ #navbar :hover {
+  color: black;
   transition: color 2s;
-  font-size: 18px;
-  transition-property: font-size;
-  transition-duration: 1s;
-  transition-delay: 0.1s;
+  font-size: 16px;
+  transition: all 0.1s;
 }
 
 #navbar :active {
-  color: black;
+  color: gold;
 }
 
 .main_header {
   font-size: 30px;
-  border: white solid 3px;
+  border: black solid 3px;
   padding: 5px;
   font-weight: 900;
   text-align: left;
   width: 90vw;
   position: fixed;
   background-color: red;
-  margin-left: 25px;
+  box-shadow: 5px 5px 5px rgb(168, 20, 20);
   color: white;
+  text-transform: uppercase;
+  border-radius: 7px;
 }
 
 #main-doc {
@@ -66,9 +92,10 @@ body {
     position: absolute;
     top: 60px;
     overflow: scroll;
+
 }
 
-div {
+.main-div {
   position: absolute;
   left: 150px;
   margin: 10px;
@@ -83,27 +110,30 @@ div {
     position: relative;
     bottom: 0;
     overflow: scroll;
-    color: white;
+    color: black;
+    text-transform: none;
+    font-weight: 500;
 }
 
 section {
-  margin: 16px;
+  margin: 20px;
+  font-size: 18px;
 }
 
 header {
-  font-size: 22px;
+  font-size: 18px;
   color: white;
-  border: white solid 2px;
+  border-bottom: black solid 2px;
   background-color: red;
-  padding: 4px;
+  text-transform: uppercase;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px black;
+  width:780px;
+  text-align: center;
 }
 
-@media (width: 400px){
 
-  header {
-    color: blue;
-    font-size: 18px;
-  }
+@media (width: 400px){
   
 .nav-link {
   font-size: 10px;
