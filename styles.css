@@ -18,7 +18,25 @@ img {
     right: 3px;
 }
 
+.monopolyman {
+  
+  width: 50px;
+  height: 50px;
+  top: -1px;
+}
 
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+}
 
 .nav_dice {
       width: 40px;
@@ -40,22 +58,25 @@ img {
 }
 
 .nav-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  text-align:left;
   color: white;
   background-color: red;
   border-bottom: black solid 2px;
-  padding-bottom: 5px;
-  padding-right: 8px;
-  margin: 4px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
   text-transform: uppercase;
   border-radius: 7px;
   box-shadow: 5px 5px 5px rgb(168, 20, 20);
 }
 
 .nav-link:hover .nav_dice {
-  transform: rotate(270deg);
-  transition: all 1s;
+  transform: rotate(1080deg);
+  transition: all 4s;
 }
 
  #navbar :hover {
